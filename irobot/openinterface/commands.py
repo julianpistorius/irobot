@@ -59,7 +59,7 @@ def clean_spot():
 
 
 def seek_dock():
-    return pack_op_code(134)
+    return pack_op_code(143)
 
 
 def power_down():
