@@ -140,7 +140,7 @@ The commands and response parsers in ``openinterface`` provide all the primitive
 			PackedBinaryData					Ex: BumpsAndWheelDrop
 			BumpsAndWheelDrop						  bump_right
 			WheelOvercurrents						  bump_left
-			Buttons									  wheel_drop_right
+			Buttons								  wheel_drop_right
 			ChargingSources							  wheel_drop_left
 			LightBumper
 			Stasis
@@ -360,4 +360,3 @@ License
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
-
