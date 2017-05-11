@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='irobot',
-    version='1.0.0b2',
+    version='1.0.0b3',
 
     description='Python implementation of iRobot''s Open Interface',
     long_description=long_description,

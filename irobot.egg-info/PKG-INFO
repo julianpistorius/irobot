@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: irobot
-Version: 1.0.0b2
+Version: 1.0.0b3
 Summary: Python implementation of iRobots Open Interface
 Home-page: http://blog.lemoneerlabs.com
 Author: Matthew Witherwax (lemoneer)
@@ -148,7 +148,7 @@ Description: ======
         			PackedBinaryData					Ex: BumpsAndWheelDrop
         			BumpsAndWheelDrop						  bump_right
         			WheelOvercurrents						  bump_left
-        			Buttons									  wheel_drop_right
+        			Buttons								  wheel_drop_right
         			ChargingSources							  wheel_drop_left
         			LightBumper
         			Stasis
@@ -306,13 +306,16 @@ Description: ======
         |
         | irobot-1.0.0b2
         |     Bugfix: Improperly set baud rate on serial connection preventing the library from working under Linux.
+        | irobot-1.0.0b3
+        |     Bugfix: Wrong op code for seek_dock
+        |     Bugfix: Use of Python 2.7 incompatible version of super()
         
         
         Installation
         ------------
         | This is beta software. It has been tested under Pyhon 2.7 and 3.x under Windows 8 and Python 3.x under Debain GNU/Linux 8 (jessie) 64 bit.
         |
-        | Download the zip package `irobot-1.0.0b2.zip <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b2.zip>`_
+        | Download the zip package `irobot-1.0.0b3.zip <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b3.tar.gz>`_
         |
         | Install with pip
         |  ``pip install [path to zip file]``
@@ -367,9 +370,7 @@ Description: ======
             AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
             LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
             OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-            SOFTWARE.
-        
-        
+            SOFTWARE.
 Keywords: robotics irobot roomba
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta

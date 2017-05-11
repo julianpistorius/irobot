@@ -298,13 +298,16 @@ Changelog
 |
 | irobot-1.0.0b2
 |     Bugfix: Improperly set baud rate on serial connection preventing the library from working under Linux.
+| irobot-1.0.0b3
+|     Bugfix: Wrong op code for seek_dock
+|     Bugfix: Use of Python 2.7 incompatible version of super()
 
 
 Installation
 ------------
 | This is beta software. It has been tested under Pyhon 2.7 and 3.x under Windows 8 and Python 3.x under Debain GNU/Linux 8 (jessie) 64 bit.
 |
-| Download the zip package `irobot-1.0.0b2.zip <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b2.zip>`_
+| Download the zip package `irobot-1.0.0b3.zip <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b3.tar.gz>`_
 |
 | Install with pip
 |  ``pip install [path to zip file]``
