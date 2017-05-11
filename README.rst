@@ -4,13 +4,15 @@ iRobot
 
 A Python implementation of the iRobot Open Interface.
 
+|
+
 Main Features
 -------------
 * Provides a low level interface for building Open Interface commands to send over a serial connection
 * Provides a low level set of response parsers to read data returned from robots
 * Provides a high level object oriented Interface for the Create2
 * Provides a REPL to interactively control a Create2 robot over a serial connection
-
+|
 Code Examples
 -------------
 **Low Level Interface**::
@@ -44,8 +46,8 @@ Code Examples
     # shutdown OI
     robot.stop()
 
-| **REPL**
-|
+**REPL**
+
 | Launch ``console_interfaces.create2`` (this should be callable as Create2 from the command line after installation)
 | In the REPL, the robot is bound to the ``robot`` variable
 | Issue Python commands as you see fit
@@ -71,7 +73,7 @@ Example:
             Decimal:	[3|0|1|1|1|1|0|0|0|0|0|0|0|0|0|0|2|67|20|4|101|38|10|136|10|136]
             Hex:		[3|0|1|1|1|1|0|0|0|0|0|0|0|0|0|0|2|43|14|4|65|26|A|88|A|88]
             Bin:		[00000011|00000000|00000001|00000001|00000001|00000001|00000000| ... |10001000|00001010|10001000]
-
+|
 API Reference
 -------------
 The commands and response parsers in ``openinterface`` provide all the primitives needed to issue and retrieve the response for any command in the Roomba Open Interface Spec.::
@@ -291,26 +293,30 @@ The ``Create2`` class also provides the following features not explicitly provid
 
 Please see the `iRobot Roomba Open Interface Spec <http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_600_Open_Interface_Spec.pdf>`_ for a listing of all commands and their purposes.
 
+|
+
 Changelog
 ---------
 | irobot-1.0.0b1
-|     Initial release
+- Initial release
 |
 | irobot-1.0.0b2
-|     Bugfix: Improperly set baud rate on serial connection preventing the library from working under Linux.
+- Bugfix: Improperly set baud rate on serial connection preventing the library from working under Linux.
+| 
 | irobot-1.0.0b3
-|     Bugfix: Wrong op code for seek_dock
-|     Bugfix: Use of Python 2.7 incompatible version of super()
+- Bugfix: Wrong op code for seek_dock
+- Bugfix: Use of Python 2.7 incompatible version of super()
 
+|
 
 Installation
 ------------
 | This is beta software. It has been tested under Pyhon 2.7 and 3.x under Windows 8 and Python 3.x under Debain GNU/Linux 8 (jessie) 64 bit.
 |
-| Download the zip package `irobot-1.0.0b3.tar.gz <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b3.tar.gz>`_
+| Download the package `irobot-1.0.0b3.tar.gz <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b3.tar.gz>`_
 |
 | Install with pip
-|  ``pip install [path to zip file]``
+|  ``pip install [path to file]``
 |
 
 Linux notes:
@@ -318,13 +324,14 @@ Linux notes:
 * In order to use the Create Cable on ``/dev/ttyUSB0`` I had to
    - remove modemmanager (apparently is takes possession of ``/dev/ttyUSB0``)
    - add myself to ``dialout`` with ``sudo adduser [username] dialout``
+|
 
 Tests
 -----
 | Unit tests for verifying some of the command builders may be found in ``tests.commands_test``
 | A test script to connect to a Create2 over a serial connection and exercise all read commands maybe found in ``tests.create2_test``
 
-
+|
 Known Issues/Notes
 ------------------
 * Issues
@@ -337,6 +344,8 @@ Known Issues/Notes
 Author
 ------
 `Matthew Witherwax (lemoneer) <http://blog.lemoneerlabs.com/page/About>`_
+
+|
 
 License
 -------
