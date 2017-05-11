@@ -315,7 +315,7 @@ Description: ======
         ------------
         | This is beta software. It has been tested under Pyhon 2.7 and 3.x under Windows 8 and Python 3.x under Debain GNU/Linux 8 (jessie) 64 bit.
         |
-        | Download the zip package `irobot-1.0.0b3.zip <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b3.tar.gz>`_
+        | Download the zip package `irobot-1.0.0b3.tar.gz <http://blog.lemoneerlabs.com/src/iRobot/irobot-1.0.0b3.tar.gz>`_
         |
         | Install with pip
         |  ``pip install [path to zip file]``
