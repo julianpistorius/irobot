@@ -45,7 +45,7 @@ class PackedBinaryData(object):
 
 class BumpsAndWheelDrop(PackedBinaryData):
     def __init__(self, data):
-        super().__init__(data)
+        super(BumpsAndWheelDrop, self).__init__(data)
 
     @property
     def bump_right(self):
@@ -66,7 +66,7 @@ class BumpsAndWheelDrop(PackedBinaryData):
 
 class WheelOvercurrents(PackedBinaryData):
     def __init__(self, data):
-        super().__init__(data)
+        super(WheelOvercurrents, self).__init__(data)
 
     @property
     def side_brush_overcurrent(self):
@@ -87,7 +87,7 @@ class WheelOvercurrents(PackedBinaryData):
 
 class Buttons(PackedBinaryData):
     def __init__(self, data):
-        super().__init__(data)
+        super(Buttons, self).__init__(data)
 
     @property
     def clean(self):
@@ -124,7 +124,7 @@ class Buttons(PackedBinaryData):
 
 class ChargingSources(PackedBinaryData):
     def __init__(self, data):
-        super().__init__(data)
+        super(ChargingSources, self).__init__(data)
 
     @property
     def internal_charger(self):
@@ -137,7 +137,7 @@ class ChargingSources(PackedBinaryData):
 
 class LightBumper(PackedBinaryData):
     def __init__(self, data):
-        super().__init__(data)
+        super(LightBumper, self).__init__(data)
 
     @property
     def left(self):
@@ -166,7 +166,7 @@ class LightBumper(PackedBinaryData):
 
 class Stasis(PackedBinaryData):
     def __init__(self, data):
-        super().__init__(data)
+        super(Stasis, self).__init__(data)
 
     @property
     def toggling(self):
